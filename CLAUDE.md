@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repository is a curated collection of reusable **skills** for Codex and Claude Code (see README.md). A skill is a bounded, explicitly-invoked workflow — not auto-triggered — that solves one repeatable task clearly enough that another developer or agent can use it without tribal knowledge.
 
-There is no build, lint, or test tooling here — no package.json, no CI config. The repo is documentation/prompt content only; "development" means writing or editing Markdown skill files.
+There is no build or test tooling here — no package.json. A GitHub Actions workflow (`.github/workflows/ci.yml`) lints every `SKILL.md`'s front matter and every relative Markdown link on each pull request and push to `main`; run the same check locally with `pip install pyyaml && python3 .github/scripts/check_docs.py` (see `.github/scripts/check_docs.py`). Otherwise the repo is documentation/prompt content only; "development" means writing or editing Markdown skill files.
 
 ## Repository structure
 
