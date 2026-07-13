@@ -1,0 +1,7 @@
+interface:
+  display_name: "Test Writer"
+  short_description: "Write focused behavior tests safely."
+  default_prompt: "Use $test-writer to write focused tests for this target."
+
+policy:
+  allow_implicit_invocation: false

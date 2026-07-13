@@ -18,6 +18,14 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [multi-review](.codex/skills/multi-review/SKILL.md) | Reconciling independent review lenses into one evidence-backed verdict. |
 | [plan-diff](.codex/skills/plan-diff/SKILL.md) | Comparing an external plan against a selected, current baseline. |
 | [plan-it](.codex/skills/plan-it/SKILL.md) | Creating or revising an evidence-backed implementation plan. |
+| [ponytail](.codex/skills/ponytail/SKILL.md) | Choosing the smallest correct change for an explicitly scoped coding task. |
+| [ponytail-debt](.codex/skills/ponytail-debt/SKILL.md) | Reporting deliberate, structured implementation shortcuts without changing code. |
+| [ponytail-review](.codex/skills/ponytail-review/SKILL.md) | Finding evidence-backed unnecessary complexity without applying fixes. |
+| [project-handoff](.codex/skills/project-handoff/SKILL.md) | Preserving durable, evidence-bounded project context for a future session. |
+| [project-start](.codex/skills/project-start/SKILL.md) | Bootstrapping a safe Codex workspace from verified repository evidence. |
+| [sub-task](.codex/skills/sub-task/SKILL.md) | Turning a named plan into traceable, independently executable work units. |
+| [test-writer](.codex/skills/test-writer/SKILL.md) | Planning, auditing, or writing focused behavior tests for a named target. |
+| [verify](.codex/skills/verify/SKILL.md) | Performing a bounded, evidence-backed skeptical review before work is relied on. |
 
 ## Using a skill
 

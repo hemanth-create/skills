@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Handoff"
+  short_description: "Preserve durable project context."
+  default_prompt: "Use $project-handoff to save an evidence-bounded project handoff."
+
+policy:
+  allow_implicit_invocation: false
