@@ -1,0 +1,7 @@
+interface:
+  display_name: "Contract Impact"
+  short_description: "Map compatibility risks before change."
+  default_prompt: "Use $contract-impact to map the compatibility impact of this change."
+
+policy:
+  allow_implicit_invocation: false

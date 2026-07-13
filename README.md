@@ -11,6 +11,7 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [code-rewrite](.codex/skills/code-rewrite/SKILL.md) | Reviewing or making a small, behavior-preserving cleanup to explicitly named source files. |
 | [codex-context-handoff](.codex/skills/codex-context-handoff/SKILL.md) | Saving a fact-bounded handoff for a fresh Codex task. |
 | [context-pickup](.codex/skills/context-pickup/SKILL.md) | Resuming safely from a selected handoff, plan, or artifact. |
+| [contract-impact](.codex/skills/contract-impact/SKILL.md) | Mapping compatibility and coordination risks before a contract change. |
 | [deps-audit](.codex/skills/deps-audit/SKILL.md) | Auditing Python manifests with a clear boundary between local and live security evidence. |
 | [error-triage](.codex/skills/error-triage/SKILL.md) | Diagnosing a concrete failure from evidence and taking the smallest safe next action. |
 | [execute](.codex/skills/execute/SKILL.md) | Implementing an approved, scoped repository task with focused verification. |
