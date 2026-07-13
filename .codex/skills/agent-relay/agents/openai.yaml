@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agent Relay"
+  short_description: "Exchange one turn through a shared agent file."
+  default_prompt: "Use $agent-relay to exchange one turn through a shared Markdown file."
+
+policy:
+  allow_implicit_invocation: false
