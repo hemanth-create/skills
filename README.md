@@ -24,6 +24,8 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [project-handoff](.codex/skills/project-handoff/SKILL.md) | Preserving durable, evidence-bounded project context for a future session. |
 | [project-start](.codex/skills/project-start/SKILL.md) | Bootstrapping a safe Codex workspace from verified repository evidence. |
 | [sub-task](.codex/skills/sub-task/SKILL.md) | Turning a named plan into traceable, independently executable work units. |
+| [test-writer](.codex/skills/test-writer/SKILL.md) | Planning, auditing, or writing focused behavior tests for a named target. |
+| [verify](.codex/skills/verify/SKILL.md) | Performing a bounded, evidence-backed skeptical review before work is relied on. |
 
 ## Using a skill
 
