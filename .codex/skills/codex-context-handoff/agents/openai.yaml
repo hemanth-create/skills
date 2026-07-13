@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codex Context Handoff"
+  short_description: "Save a fact-bounded task handoff."
+  default_prompt: "Use $codex-context-handoff to create a concise handoff for this task."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Python Dependency Audit"
+  short_description: "Audit Python manifests and live scan results."
+  default_prompt: "Use $deps-audit to review this Python project's dependencies."
+
+policy:
+  allow_implicit_invocation: false

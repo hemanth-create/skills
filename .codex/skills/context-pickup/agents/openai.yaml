@@ -1,0 +1,7 @@
+interface:
+  display_name: "Context Pickup"
+  short_description: "Resume safely from saved task context."
+  default_prompt: "Use $context-pickup to resume from the latest handoff."
+
+policy:
+  allow_implicit_invocation: false
