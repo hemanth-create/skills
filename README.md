@@ -1,24 +1,19 @@
 # Skills
 
-A practical collection of skill plugins for Claude Code and Codex.
+A focused collection of reusable skills for Codex and Claude Code. Each skill adds a bounded workflow that is hard to execute consistently from a general prompt alone.
 
-## What this repo includes
+## Included skills
 
-- A focused set of core skills for everyday development workflows
-- A clean base you can use as-is or extend over time
+| Skill | Use it for |
+| --- | --- |
+| [agent-relay](agent-relay/SKILL.md) | Exchanging one safe, turn-based message with another AI through a shared Markdown file. |
+| [architecture-review](architecture-review/SKILL.md) | Reviewing an existing repository plan, design, deployment proposal, or production-readiness decision before implementation. |
+| [code-rewrite](code-rewrite/SKILL.md) | Reviewing or making a small, behavior-preserving cleanup to explicitly named source files. |
 
-## Quick start
+## Using a skill
 
-1. Use the existing skills as your default setup.
-2. Add or adjust skills based on your workflow needs.
-3. Keep only the skills that improve your daily flow.
+Invoke a skill explicitly by name, for example `@architecture-review`. Use its slash form as well when the environment supports slash-style invocation. Read the skill's description for its scope and inputs.
 
-## Extend it your way
+## Adding a skill
 
-If your workflow needs more, add the skills that make sense for your team or personal setup.
-This repo gives you the essentials, and you can build on top of it.
-
-## Contributing
-
-Contributions are welcome.
-If you add a new skill, keep it practical, reusable, and useful for everyday work.
+Give each skill a top-level folder containing `SKILL.md`. Keep its trigger description concise, add only instructions or context that are genuinely specific to the workflow, and validate real examples before relying on it.
