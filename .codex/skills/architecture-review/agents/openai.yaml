@@ -1,0 +1,7 @@
+interface:
+  display_name: "Architecture Review"
+  short_description: "Review a proposed design before implementation."
+  default_prompt: "Use $architecture-review to assess this proposed design before implementation."
+
+policy:
+  allow_implicit_invocation: false

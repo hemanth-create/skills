@@ -1,0 +1,7 @@
+interface:
+  display_name: "Code Rewrite"
+  short_description: "Review or refine a small set of source files."
+  default_prompt: "Use $code-rewrite to review and refine these selected source files."
+
+policy:
+  allow_implicit_invocation: false
