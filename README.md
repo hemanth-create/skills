@@ -6,9 +6,9 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 
 | Skill | Use it for |
 | --- | --- |
-| [agent-relay](agent-relay/SKILL.md) | Exchanging one safe, turn-based message with another AI through a shared Markdown file. |
-| [architecture-review](architecture-review/SKILL.md) | Reviewing an existing repository plan, design, deployment proposal, or production-readiness decision before implementation. |
-| [code-rewrite](code-rewrite/SKILL.md) | Reviewing or making a small, behavior-preserving cleanup to explicitly named source files. |
+| [agent-relay](.codex/skills/agent-relay/SKILL.md) | Exchanging one safe, turn-based message with another AI through a shared Markdown file. |
+| [architecture-review](.codex/skills/architecture-review/SKILL.md) | Reviewing an existing repository plan, design, deployment proposal, or production-readiness decision before implementation. |
+| [code-rewrite](.codex/skills/code-rewrite/SKILL.md) | Reviewing or making a small, behavior-preserving cleanup to explicitly named source files. |
 
 ## Using a skill
 
@@ -16,4 +16,4 @@ Invoke a skill explicitly by name, for example `@architecture-review`. Use its s
 
 ## Adding a skill
 
-Give each skill a top-level folder containing `SKILL.md`. Keep its trigger description concise, add only instructions or context that are genuinely specific to the workflow, and validate real examples before relying on it.
+Give each skill a folder under `.codex/skills/` containing `SKILL.md`. Keep its trigger description concise, add only instructions or context that are genuinely specific to the workflow, and validate real examples before relying on it.
