@@ -1,0 +1,7 @@
+interface:
+  display_name: "Local SAST Analyzer"
+  short_description: "Review local code and exported SAST results."
+  default_prompt: "Use $local-sast-analyzer to triage this local security review."
+
+policy:
+  allow_implicit_invocation: false

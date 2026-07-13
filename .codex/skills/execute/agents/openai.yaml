@@ -1,0 +1,7 @@
+interface:
+  display_name: "Execute"
+  short_description: "Implement an approved scoped repository task."
+  default_prompt: "Use $execute to implement this approved repository task."
+
+policy:
+  allow_implicit_invocation: false
