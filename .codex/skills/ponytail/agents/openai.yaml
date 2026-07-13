@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ponytail"
+  short_description: "Choose the smallest safe code change."
+  default_prompt: "Use $ponytail to implement the smallest correct change for this task."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ponytail Debt"
+  short_description: "Track intentional shortcut debt."
+  default_prompt: "Use $ponytail-debt to report intentional shortcuts in this repository."
+
+policy:
+  allow_implicit_invocation: false

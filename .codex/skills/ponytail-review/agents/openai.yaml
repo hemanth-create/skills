@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ponytail Review"
+  short_description: "Find unnecessary complexity to remove."
+  default_prompt: "Use $ponytail-review to find unnecessary complexity in this target."
+
+policy:
+  allow_implicit_invocation: false
