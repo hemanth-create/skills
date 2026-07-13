@@ -15,6 +15,9 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [error-triage](.codex/skills/error-triage/SKILL.md) | Diagnosing a concrete failure from evidence and taking the smallest safe next action. |
 | [execute](.codex/skills/execute/SKILL.md) | Implementing an approved, scoped repository task with focused verification. |
 | [local-sast-analyzer](.codex/skills/local-sast-analyzer/SKILL.md) | Reviewing a local codebase or exported SAST findings with evidence-backed triage. |
+| [multi-review](.codex/skills/multi-review/SKILL.md) | Reconciling independent review lenses into one evidence-backed verdict. |
+| [plan-diff](.codex/skills/plan-diff/SKILL.md) | Comparing an external plan against a selected, current baseline. |
+| [plan-it](.codex/skills/plan-it/SKILL.md) | Creating or revising an evidence-backed implementation plan. |
 
 ## Using a skill
 

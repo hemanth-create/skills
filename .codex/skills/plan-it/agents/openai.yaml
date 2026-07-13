@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan It"
+  short_description: "Create an evidence-backed implementation plan."
+  default_prompt: "Use $plan-it to create a concrete implementation plan for this task."
+
+policy:
+  allow_implicit_invocation: false

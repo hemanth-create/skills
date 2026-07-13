@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan Diff"
+  short_description: "Compare an external plan to its baseline."
+  default_prompt: "Use $plan-diff to compare this external plan with the selected baseline."
+
+policy:
+  allow_implicit_invocation: false
