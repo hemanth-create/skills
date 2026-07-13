@@ -12,6 +12,9 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [codex-context-handoff](.codex/skills/codex-context-handoff/SKILL.md) | Saving a fact-bounded handoff for a fresh Codex task. |
 | [context-pickup](.codex/skills/context-pickup/SKILL.md) | Resuming safely from a selected handoff, plan, or artifact. |
 | [deps-audit](.codex/skills/deps-audit/SKILL.md) | Auditing Python manifests with a clear boundary between local and live security evidence. |
+| [error-triage](.codex/skills/error-triage/SKILL.md) | Diagnosing a concrete failure from evidence and taking the smallest safe next action. |
+| [execute](.codex/skills/execute/SKILL.md) | Implementing an approved, scoped repository task with focused verification. |
+| [local-sast-analyzer](.codex/skills/local-sast-analyzer/SKILL.md) | Reviewing a local codebase or exported SAST findings with evidence-backed triage. |
 
 ## Using a skill
 

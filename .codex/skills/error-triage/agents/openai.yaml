@@ -1,0 +1,7 @@
+interface:
+  display_name: "Error Triage"
+  short_description: "Diagnose a concrete failure from evidence."
+  default_prompt: "Use $error-triage to diagnose this error and propose the safest next action."
+
+policy:
+  allow_implicit_invocation: false
