@@ -1,0 +1,7 @@
+interface:
+  display_name: "Multi Review"
+  short_description: "Reconcile two review lenses."
+  default_prompt: "Use $multi-review to review this target and reconcile one verdict."
+
+policy:
+  allow_implicit_invocation: false
