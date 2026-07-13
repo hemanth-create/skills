@@ -21,6 +21,9 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [ponytail](.codex/skills/ponytail/SKILL.md) | Choosing the smallest correct change for an explicitly scoped coding task. |
 | [ponytail-debt](.codex/skills/ponytail-debt/SKILL.md) | Reporting deliberate, structured implementation shortcuts without changing code. |
 | [ponytail-review](.codex/skills/ponytail-review/SKILL.md) | Finding evidence-backed unnecessary complexity without applying fixes. |
+| [project-handoff](.codex/skills/project-handoff/SKILL.md) | Preserving durable, evidence-bounded project context for a future session. |
+| [project-start](.codex/skills/project-start/SKILL.md) | Bootstrapping a safe Codex workspace from verified repository evidence. |
+| [sub-task](.codex/skills/sub-task/SKILL.md) | Turning a named plan into traceable, independently executable work units. |
 
 ## Using a skill
 

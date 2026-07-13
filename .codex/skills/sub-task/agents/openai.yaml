@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sub Task"
+  short_description: "Create traceable executable sub-tasks."
+  default_prompt: "Use $sub-task to break this plan into traceable work units."
+
+policy:
+  allow_implicit_invocation: false

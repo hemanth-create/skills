@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Start"
+  short_description: "Bootstrap a safe Codex workspace."
+  default_prompt: "Use $project-start to bootstrap this repository for Codex work."
+
+policy:
+  allow_implicit_invocation: false
