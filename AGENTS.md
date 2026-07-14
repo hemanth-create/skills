@@ -6,7 +6,7 @@ This repository is a practical, curated collection of reusable skills for Claude
 
 ## Repository layout
 
-- Keep each skill under `.codex/skills/<skill-name>/SKILL.md`.
+- Keep each skill under `.codex/skills/<skill-name>/SKILL.md` (Codex) and, where a Claude Code adaptation exists, under `.claude/skills/<skill-name>/SKILL.md` (Claude Code).
 - Use lowercase kebab-case directory names, such as `aws-investigation` or `pr-review`.
 - Keep shared examples, scripts, or reference material inside that skill's directory.
 - Keep the root `README.md` focused on discovering and using the collection.
