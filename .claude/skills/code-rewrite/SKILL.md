@@ -32,6 +32,8 @@ Choose a mode from the request:
 
 Match the repository's language, conventions, and established architecture. Prefer the smallest clear diff. Extract a function, module, or abstraction only when it meaningfully improves responsibility, testing, or maintenance; never split cohesive code merely to meet an arbitrary line count.
 
+A simplification is valid only when it preserves observable behavior, validation, error handling, security, compatibility, accessibility, and relevant tests. Shorter or more "elegant" code alone is not evidence of improvement.
+
 Keep authorization and data-handling boundaries visible and testable. Follow the repository's existing enforcement pattern rather than imposing a universal controller/service/repository structure. Do not add dependencies, rename or delete files, change generated artifacts, or introduce broad formatting churn without approval.
 
 ## Output
@@ -61,5 +63,7 @@ Use this structure for a review:
 ```
 
 Use `critical` for likely security/privacy exposure, data loss, or production breakage; use `high` for a likely user-visible or unsafe behavior issue. Keep style-only findings low severity.
+
+Use `[simplify]` in `## Findings` only when evidence shows a smaller implementation preserves the required behavior; include the smallest safe change. Otherwise, keep speculative cleanup out of the report.
 
 For a rewrite, also report changed files, preserved behavior, verification, and remaining risks. Save an artifact only when the user asks for one or repository instructions require it; otherwise keep the result in chat.

@@ -18,10 +18,11 @@ Read applicable `CLAUDE.md` instructions and the exact material under review. Us
 1. Trace relevant success, failure, empty, malformed, boundary, and external-state paths.
 2. Compare behavior with the stated requirements, plan, or contract.
 3. Check relevant validation, error handling, authorization, privacy, data integrity, compatibility, migration, deployment, and rollback risks.
-4. Determine whether existing tests or a focused permitted check actually support the risky behavior. Do not run a check only to fill the report.
-5. Report only material, evidence-backed findings. A finding needs a precise location or artifact section when possible, the realistic impact, and the smallest safe correction. Label incomplete evidence as `candidate` rather than overstating confidence.
+4. On changed code, check whether an added abstraction, layer, dependency, configuration option, or flexible path has a demonstrated present need. Report it only when a simpler correction preserves behavior, safety, validation, compatibility, observability, and tests.
+5. Determine whether existing tests or a focused permitted check actually support the risky behavior. Do not run a check only to fill the report.
+6. Report only material, evidence-backed findings. A finding needs a precise location or artifact section when possible, the realistic impact, and the smallest safe correction. Label incomplete evidence as `candidate` rather than overstating confidence.
 
-Do not turn style preferences, speculative cleanup, or generic advice into findings. Use `/ponytail-review` for unnecessary complexity and `/multi-review` when two independent review lenses are needed.
+Do not turn style preferences, speculative cleanup, or generic advice into findings. Use `/ponytail-review` for a dedicated deep complexity audit beyond this change-focused gate, and `/multi-review` when two independent review lenses are needed.
 
 Calibrate severity to realistic impact: `critical` for exploitable security, data loss, or release-blocking failure; `high` for likely user-visible or contract failure; `medium` for a credible constrained defect or missing protection; and `low` for a minor but real risk. A `candidate` is not a severity and must state what evidence would confirm it.
 

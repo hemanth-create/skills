@@ -27,6 +27,12 @@ source: <user request, issue, or named plan>
 
 - <Explicitly excluded work.>
 
+## Design restraint
+
+- Smallest viable approach: <approach>
+- Existing pattern or extension point to reuse: `<path:symbol>` or `None`
+- New abstraction or dependency: `None` | <item and present evidence it is necessary>
+
 ## Likely files
 
 | Path | Evidence | Intended change |

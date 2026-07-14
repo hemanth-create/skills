@@ -33,4 +33,10 @@ For a new artifact, use `YYYY-MM-DD_HHmm_<topic>.md`. Never overwrite an existin
 - Identify data, security, migration, compatibility, or deployment risks early.
 - Do not invoke `$execute`, `$plan-diff`, or any other skill automatically. Offer an explicit next action only after the plan is complete.
 
+## Design restraint
+
+- State the smallest viable approach and the existing repository pattern or extension point it reuses.
+- For every proposed new module, class, interface, layer, dependency, configuration flag, or generalized abstraction, state the present evidence that makes it necessary; use `None` when no new abstraction is needed.
+- Exclude future-proofing, hypothetical reuse, and cleanup that the task or evidence does not require.
+
 Finish with a concise summary of the goal, artifact path or inline status, and the next decision or approval needed.
