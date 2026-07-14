@@ -10,9 +10,9 @@ There is no build or test tooling here — no package.json. A GitHub Actions wor
 
 ## Repository structure
 
-- Each skill lives under `.codex/skills/<skill-name>/SKILL.md`, using lowercase kebab-case directory names (e.g. `architecture-review`).
-- A skill's supporting material (reference docs, examples, scripts) stays inside that skill's own directory, e.g. `.codex/skills/architecture-review/references/clinical-ai-review.md`.
-- `README.md` is the discovery/index surface for the collection — its skills table must stay in sync whenever a skill is added, renamed, or removed.
+- The same set of skills is maintained in two parallel trees: `.codex/skills/<skill-name>/SKILL.md` for Codex, and `.claude/skills/<skill-name>/SKILL.md` for Claude Code — both using lowercase kebab-case directory names (e.g. `architecture-review`). The two copies carry the same workflow logic; only tool-specific conventions differ (invocation syntax, references to the target repo's guidance file — `AGENTS.md` for Codex, `CLAUDE.md` for Claude Code — and artifact paths). One skill, `codex-context-handoff` / `claude-context-handoff`, is named per-tool because the name itself is tool-specific.
+- A skill's supporting material (reference docs, examples, scripts) stays inside that skill's own directory, e.g. `.codex/skills/architecture-review/references/clinical-ai-review.md` (mirrored at `.claude/skills/architecture-review/references/clinical-ai-review.md`).
+- `README.md` is the discovery/index surface for the collection — it has one skills table per tree, and both must stay in sync whenever a skill is added, renamed, or removed.
 - `AGENTS.md` holds the authoritative repository guidelines (layout, writing conventions, git workflow); the important parts are folded into this file below.
 
 ## Anatomy of a SKILL.md
@@ -23,7 +23,9 @@ Every `SKILL.md` in this repo follows the same shape, established consistently a
 2. **Scope/inputs** — what the skill requires before it can run (an explicit file list, a target document, a file path) and what to do when that's missing (ask one concise question rather than guessing).
 3. **Workflow** — an ordered, numbered procedure.
 4. **Output** — a fixed Markdown template returned in chat (verdict / findings / severity-tagged sections). Each skill defines its own severity vocabulary (e.g. `critical`/`high`, or a 0–10 score) and applies it consistently in that template.
-5. **Artifacts** — a skill only writes a saved copy of its output when the user asks, under `.codex/artifacts/<skill-name>/YYYY-MM-DD_HHmm_<topic>.md`; otherwise the result stays in chat only.
+5. **Artifacts** — a skill only writes a saved copy of its output when the user asks, under `.codex/artifacts/<skill-name>/YYYY-MM-DD_HHmm_<topic>.md` (Codex) or `.claude/artifacts/<skill-name>/YYYY-MM-DD_HHmm_<topic>.md` (Claude Code), matching whichever tree the skill runs from; otherwise the result stays in chat only.
+
+Only the `.codex/skills/*/agents/openai.yaml` files are Codex-CLI-only agent metadata (display name, default prompt, implicit-invocation policy); Claude Code has no equivalent file, so `.claude/skills/*` copies simply omit an `agents/` folder.
 
 Some skills also check for a `.helpers/README.md` at the start of their workflow and defer to it if present, falling back to normal repository tools otherwise — treat this as a hook for repo-specific overrides, not something to assume exists.
 
