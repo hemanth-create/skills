@@ -25,10 +25,11 @@ Ask one concise question only when a reasonable implementation would make an inc
 1. Read applicable `AGENTS.md` and repo-local helper guidance. Preserve unrelated working-tree changes and follow the repository's command, test, data, and approval rules.
 2. Read the exact target files before editing. Read nearby callers, types, tests, and existing patterns only as needed to make the change safely.
 3. Work in coherent slices. Each slice must leave the code more complete than before; do not leave stubs, placeholder behavior, or half-finished functions.
-4. Edit with `apply_patch`. Keep the diff focused, match local conventions, and avoid speculative abstractions or unrelated formatting.
-5. Self-review each completed slice: re-read the changed code, check callers and error paths, and compare it with the accepted task.
-6. Run the smallest focused verification allowed by the repository. If a check fails, fix the issue when it is in scope or report the failure; never present an unverified change as complete.
-7. Review the final diff and summarize what changed, what was verified, and any remaining limitation. Do not invoke another skill automatically.
+4. Before adding a module, class, interface, layer, dependency, configuration option, or generalized helper, identify the present task or source evidence that requires it. If it serves only imagined future reuse, prefer direct local code or surface the design decision.
+5. Edit with `apply_patch`. Keep the diff focused, match local conventions, and avoid speculative abstractions or unrelated formatting.
+6. Self-review each completed slice: re-read the changed code, check callers and error paths, compare it with the accepted task, and confirm each added concept has a current responsibility, caller, or boundary that justifies it.
+7. Run the smallest focused verification allowed by the repository. If a check fails, fix the issue when it is in scope or report the failure; never present an unverified change as complete.
+8. Review the final diff, simplify unnecessary code when safe, and summarize what changed, what was verified, and any remaining limitation. Do not invoke another skill automatically.
 
 ## Approval boundaries
 
