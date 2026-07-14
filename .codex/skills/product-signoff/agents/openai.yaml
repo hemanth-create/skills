@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Sign-off"
+  short_description: "Create an evidence-backed product sign-off."
+  default_prompt: "Use $product-signoff to create a product sign-off documentation bundle."
+
+policy:
+  allow_implicit_invocation: false

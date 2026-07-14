@@ -1,6 +1,6 @@
 # Skills
 
-A focused collection of reusable skills for Codex and Claude Code. Each skill adds a bounded workflow that is hard to execute consistently from a general prompt alone. The same 21 workflows are maintained in two parallel trees — `.codex/skills/` for Codex and `.claude/skills/` for Claude Code — so either tool can invoke them natively.
+A focused collection of reusable skills for Codex and Claude Code. Each skill adds a bounded workflow that is hard to execute consistently from a general prompt alone. The same 22 workflows are maintained in two parallel trees — `.codex/skills/` for Codex and `.claude/skills/` for Claude Code — so either tool can invoke them natively.
 
 ## Included skills — `.codex/skills` (Codex)
 
@@ -24,6 +24,7 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [ponytail-review](.codex/skills/ponytail-review/SKILL.md) | Finding evidence-backed unnecessary complexity without applying fixes. |
 | [project-handoff](.codex/skills/project-handoff/SKILL.md) | Preserving durable, evidence-bounded project context for a future session. |
 | [project-start](.codex/skills/project-start/SKILL.md) | Bootstrapping a safe Codex workspace from verified repository evidence. |
+| [product-signoff](.codex/skills/product-signoff/SKILL.md) | Creating a multi-file, evidence-backed product sign-off bundle. |
 | [sub-task](.codex/skills/sub-task/SKILL.md) | Turning a named plan into traceable, independently executable work units. |
 | [test-writer](.codex/skills/test-writer/SKILL.md) | Planning, auditing, or writing focused behavior tests for a named target. |
 | [verify](.codex/skills/verify/SKILL.md) | Performing a bounded, evidence-backed skeptical review before work is relied on. |
@@ -50,6 +51,7 @@ A focused collection of reusable skills for Codex and Claude Code. Each skill ad
 | [ponytail-review](.claude/skills/ponytail-review/SKILL.md) | Finding evidence-backed unnecessary complexity without applying fixes. |
 | [project-handoff](.claude/skills/project-handoff/SKILL.md) | Preserving durable, evidence-bounded project context for a future session. |
 | [project-start](.claude/skills/project-start/SKILL.md) | Bootstrapping a safe Claude Code workspace from verified repository evidence. |
+| [product-signoff](.claude/skills/product-signoff/SKILL.md) | Creating a multi-file, evidence-backed product sign-off bundle. |
 | [sub-task](.claude/skills/sub-task/SKILL.md) | Turning a named plan into traceable, independently executable work units. |
 | [test-writer](.claude/skills/test-writer/SKILL.md) | Planning, auditing, or writing focused behavior tests for a named target. |
 | [verify](.claude/skills/verify/SKILL.md) | Performing a bounded, evidence-backed skeptical review before work is relied on. |
